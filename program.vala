@@ -1419,7 +1419,7 @@ public class Program : Object {
         if (!lookup_in_namespace1(sources, namespace_name, symbols, false)) {
             if (symbols.local_symbols_only())
                 return false;
-            if (!lookup_in_namespace1(sources, namespace_name, symbols, true)); // .vapi files
+            if (!lookup_in_namespace1(sources, namespace_name, symbols, true)) // .vapi files
                 if (!lookup_in_namespace1(system_sources, namespace_name, symbols, true))
                     return false;
         }
